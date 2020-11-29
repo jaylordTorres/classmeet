@@ -1,6 +1,7 @@
+import 'package:classmate_ui/screen/monitor/monitor.dart';
 import 'package:flutter/material.dart';
 
-import '../screen/dashboard/Dahboard.dart';
+import '../screen/dashboard/dashboard_screen.dart';
 import '../constant/index.dart';
 
 class App extends StatelessWidget {
@@ -14,6 +15,10 @@ class App extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: DashboardScreen(),
+      // routes: {
+      //   "/dashboard": (_) => DashboardScreen(),
+      //   "/monitor": (_) => MonitorScreen(),
+      // },
     );
   }
 }

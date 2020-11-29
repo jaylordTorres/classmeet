@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
 
 class UiCircleButton extends StatelessWidget {
-  const UiCircleButton({Key key, this.child}) : super(key: key);
+  final Function onPressed;
+  const UiCircleButton({Key key, this.child, this.onPressed}) : super(key: key);
 
   final Widget child;
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {
-        print('clicked');
-      },
+      onTap: onPressed,
       child: Container(
           padding: EdgeInsets.all(8),
           decoration: BoxDecoration(

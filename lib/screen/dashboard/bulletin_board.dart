@@ -4,9 +4,10 @@ import 'package:flutter/material.dart';
 import '../../ui/index.dart';
 import '../../constant/index.dart';
 
-import 'BulletinBoardItem.dart';
+import 'bulletin_board_item.dart';
 
 class BulletinBoard extends StatelessWidget {
+  static Icon icon = Icon(Icons.access_alarm);
   const BulletinBoard({Key key, this.feeds}) : super(key: key);
   final List<FeedModel> feeds;
 
@@ -19,6 +20,9 @@ class BulletinBoard extends StatelessWidget {
           UiCardTitle(
             title: Terms.bulletinBoard,
             action: UiCircleButton(
+              onPressed: () {
+                Navigator.of(context).pushNamed("/monitor");
+              },
               child: Icon(
                 Icons.add,
                 color: Colors.white,
