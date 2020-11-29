@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../module/fake.dart';
+
 import 'BulletinBoard.dart';
 
 class DashboardScreen extends StatelessWidget {
@@ -8,7 +10,7 @@ class DashboardScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: BulletinBoard(),
+      body: BulletinBoard(feeds: fakeFeeds),
     );
   }
 }

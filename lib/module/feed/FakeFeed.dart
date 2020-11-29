@@ -27,4 +27,17 @@ List<FeedModel> fakeFeeds = [
           "https://blogmedia.evbstatic.com/wp-content/uploads/wpmulti/sites/8/shutterstock_199419065.jpg"
     }
   }),
+  FeedModel.fromJson({
+    'title': "Bluestone lane is now opening at 1902 St.",
+    "thumb":
+        "https://blogmedia.evbstatic.com/wp-content/uploads/wpmulti/sites/8/shutterstock_199419065.jpg",
+    'content':
+        "To celebrate company happy hours at houson yards and near by places",
+    "created": "2 days ago",
+    'author': {
+      "fullName": "Catherin Wassen",
+      "avatar":
+          "https://blogmedia.evbstatic.com/wp-content/uploads/wpmulti/sites/8/shutterstock_199419065.jpg"
+    }
+  }),
 ];
